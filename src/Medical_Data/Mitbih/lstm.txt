@@ -1,0 +1,1 @@
+Jitter0.01Scale0.1Mag Warp0.1Time Warp0.1Window Warp0.01Win Slice Warp0.01
