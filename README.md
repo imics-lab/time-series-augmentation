@@ -80,7 +80,7 @@ Please make sure to update tests as appropriate.
 
 <!-- CITATION -->
 ## Citation
-
+```bibtex
 @article{YourName,
   title={Your Title},
   author={Your team},
