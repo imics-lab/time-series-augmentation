@@ -2,51 +2,23 @@
 <div align="center">
 
 
-<!-- Time Series Augmentation: Imapct on Biomedical Data-->
-
-A new project template for research projects. `> REPLACE ME`
+<!-- Title-->
+# Time Series Augmentation: In-depth analysis with Biomedical Data
 
 <!-- BADGES -->
 > <div align="left">
-> 
-> `### <<< DELETE ME` ***Badges*** *(optional)*
->  
-> If you have an arXiv paper, you can add and update the `[arXiv]` badge by
-> replacing `1234.56789` with the arXiv ID of your paper and the arXiv
-> subject `cs.LG` with the main subject. Else, delete it (or comment out).
->
-> if your paper is published at a conference, you can add and update the
-> `[Conference]` badge by replacing `Conference`, `Year`, and the link fields.
-> Else, delete it (or comment out).
-> 
-> It is also useful to add a CI build/test [status badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
-> to your project. A base Continuous Integration pipeline has been defined in
-> [.github/workflows/conda-test.yml](.github/workflows/conda-test.yml)
-> GitHub will automatically register and run this pipeline when you push to the
-> `main` branch.
-> 
-> Copy the workflow badge from the corresponding workflow in the Actions tab
-> (click the breadcrumbs) and overwrite the Conda Test badge below.
-> 
-> 
-> `### DELETE ME >>>`
->
-> </div>
 
-[![Conda Test](https://github.com/ellisbrown/research-project/actions/workflows/conda-test.yml/badge.svg)](https://github.com/ellisbrown/research-project/actions/workflows/conda-test.yml)
-[![arXiv](https://img.shields.io/badge/cs.LG-arXiv:1234.56789-b31b1b.svg)](https://arxiv.org/abs/1234.56789)
-[![Conference](https://img.shields.io/badge/Conference-year-4b44ce.svg)](https://yourconference.org/2020)
 
 </div>
 
 
 <!-- DESCRIPTION -->
 ## Description
-> `### <<< DELETE ME:` ***Description***
+>
 >  
-> Fill in a succinct description of your project.
+> This repository servers as a codebase for various augmentations that can be applied to time series data. In this repository, we have provided code for traditional as well as deep learning basd augmentations. Testing and results are generated with four different datasets.
 > 
-> `### DELETE ME >>>`
+> 
 
 
 <!-- SETUP -->
