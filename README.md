@@ -24,20 +24,16 @@
 <!-- SETUP -->
 ## Setup
 
-> `### <<< DELETE ME:` ***Setup***
->  
-> Below are some base instructions for setting up a conda environment. See this
-> [guide](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/)
-> to Conda to learn some great best practices!
-> 
-> Add any instructions necessary to setup the project. The best time to create
-> this is ***as you are developing*** the project, while you remember the steps
-> you have taken.
->
-> *Brownie points*: try to follow your setup instructions to replicate the setup
-> from scratch on another machine to ensure that it is truly reproducible.
-> 
-> `### DELETE ME >>>`
+Before running the code, ensure that you have the following prerequisites installed:
+
+- Python 3.x
+- PyTorch
+- Nvidia CUDA toolkit and cuDNN (for GPU acceleration)
+
+```bash
+pip install torch torchvision
+conda install cudatoolkit
+```
 
 
 ### Conda Virtual Environment
