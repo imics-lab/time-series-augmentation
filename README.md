@@ -1,26 +1,9 @@
-> `### <<< DELETE ME:` ***Template***
->  
-> This template contains some useful structure and convention for new research
-> projects that will help you get started more quickly, and will make your
-> code more accessible, maintainable, and reproducible. This will make your
-> work more likely to be adopted by others!
->
-> I highly recommend taking a second to read Patrick Mineault's
-> [Good Research Code Handbook](https://goodresearch.dev/index.html) if you are
-> in the process of starting a new project for many tips that will help you
-> beyond the initial setup phase.
->
-> > *Note:* You should delete everything within markdown blockquotes `>` before
-> going live with your project.
-> 
-> `### DELETE ME >>>`
-
 
 <div align="center">
 
 
-<!-- TITLE -->
-# Project Template `> REPLACE ME`
+<!-- Time Series Augmentation: Imapct on Biomedical Data-->
+
 A new project template for research projects. `> REPLACE ME`
 
 <!-- BADGES -->
