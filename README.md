@@ -50,21 +50,16 @@ conda env config vars set PYTHONPATH=$(pwd):$(pwd)/src
 
 <!-- USAGE -->
 ## Usage
-> `### <<< DELETE ME:` ***Usage***
+> The main code lies in the src folder. There are 4 different datasets each with a separate sub-directory under src/Medical_Data.
+> Except the Human Activity Recognition data, the other datasets are stored in local machine and will be shared upon request.
+> In each of the folders, there is code for lstm, cnn and tst which contains the code for training with LSTM_FCN, InceptionTime and TST for all the traditional datasets.
+> The Vae code works to train a Variational AutoEncoder. The signal folder contains the code for the diffusion model.
+> There is a separate TTS GAN folder which contains the code for training and testing GAN on all the datasets.  
 >  
-> Provide information on how to run your project. Delete the below example.
+>
 > 
-> `### DELETE ME >>>`
+> 
 
-```python
-from foo import bar
-
-bar.baz("hello world")
-```
-
-```bash
-python -m foo.bar "hello world"
-```
 
 
 <!-- CONTRIBUTING -->
