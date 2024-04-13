@@ -43,7 +43,7 @@ Create the Conda virtual environment using the [environment file](environment.ym
 conda env create -f environment.yml
 
 # dynamically set python path for the environment
-conda activate YOUR_PROJECT
+conda activate time_series_augmentation
 conda env config vars set PYTHONPATH=$(pwd):$(pwd)/src
 ```
 
