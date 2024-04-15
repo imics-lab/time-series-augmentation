@@ -50,11 +50,41 @@ conda env config vars set PYTHONPATH=$(pwd):$(pwd)/src
 
 <!-- USAGE -->
 ## Usage
-> The main code lies in the src folder. There are 4 different datasets each with a separate sub-directory under src/Medical_Data.<br />
-> > Except the Human Activity Recognition data, the other datasets are stored in local machine and will be shared upon request.<br />
-> In each of the folders, there is code for lstm, cnn and tst which contains the code for training with LSTM_FCN, InceptionTime and TST for all the traditional datasets.<br />
-> The Vae code works to train a Variational AutoEncoder. The signal folder contains the code for the diffusion model.<br />
-> There is a separate TTS GAN folder which contains the code for training and testing GAN on all the datasets.  <br />
+### File Organization
+> 1.  The main code lies in the src folder. There are 4 different datasets each with a separate sub-directory under src/Medical_Data.<br />
+> 2. Except the Human Activity Recognition data, the other datasets are stored in local machine and will be shared upon request.<br />
+> 3. In each of the folders, there is code for lstm, cnn and tst which contains the code for training with LSTM_FCN, InceptionTime and TST for all the traditional datasets.<br />
+> 4. The Vae code works to train a Variational AutoEncoder. The signal folder contains the code for the diffusion model.<br />
+> 5. There is a separate TTS GAN folder which contains the code for training and testing GAN on all the datasets.  <br />
+### Running code
+> #### To run an experiment with a dataset:
+> #### Example dataset: Human Activity Recognition data
+> 1. Go to src/Medical_Data/UniMibB_SHAR
+> 2. Run jupyter notebook UniMiB_SHAR_ADL_load_datset.ipynb. This will automatically download the dataset into the folder.
+> #### TRADITIONAL AUGMENTATION
+> 3. Run python files unimib_LSTM_test.py, unimib_CNN_test.py, unimib_TST_test.py
+> 4. This will print the results of the best augmentaion hyperparameter for each of the traditional augmentations.
+> 5. Open the final_LSTM_unimib.py, final_CNN_unimib.py, final_TST_unimib.py, in the main function type in the hyperarameters generated from the previous step in the respective files.
+> 6. The variables to update are jitter_val, scale_val, mag_warp_val, time_warp_val, window_warp_val, window_slice_val.
+> 7. Run the python files final_LSTM_unimib.py, final_CNN_unimib.py, final_TST_unimib.py.
+> 8. This will give the accuracy and 95% confidence interval results for the traditional augmentation methods.
+> #### VARIATIONAL AUTOENCODER
+> 9. Run unimib_vae.py to generate numpy arrays of the trained model
+> 10. Run unimib_vae_test.py to generate the results of classification using samples generated from trained vae model.
+> #### DIFFUSION
+> 11. Go to folder /signal
+> 12. Copy the dataset folder to this location, or else running the following code will download the data again.
+> 13. Run ddpm1d_cls_free.py, this wil train the diffusion model.
+> 14. After training, run final_unimib_diffusion.py, this will use the trained model to generate new samples and augment them with the existing dataset. The new files will be saved as numpy arrays.
+> 15. Run final_unimib_diffusion_new.py to get the final accuracy results along with the confidence intervals.
+> ### Generative Adversarial Network
+> 16. Go to src/TTS_GAN
+> 17. Copy the contents of src/TTS_GAN/unimib to src/unimib
+> 18. Run unimib_train_TTS_GAN.py to train the GAN model.
+> 19. Run unimib_final_gan_new.py to generate samples with the trained model and then classify them with the three classifiers.
+> 20. It will output the 10 different accuracy values for the 10 different shuffles. Calculate the average accuracy and 95% confidence interval using the values
+> #### Finished experiment with 1 dataset.
+> Similarly follow steps with other three datasets. However, the data is stored locally due to size restrictions. It will be shared upon request.
 >  
 >
 > 
