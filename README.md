@@ -77,7 +77,7 @@ conda env config vars set PYTHONPATH=$(pwd):$(pwd)/src
 > 13. Run ddpm1d_cls_free.py, this wil train the diffusion model.
 > 14. After training, run final_unimib_diffusion.py, this will use the trained model to generate new samples and augment them with the existing dataset. The new files will be saved as numpy arrays.
 > 15. Run final_unimib_diffusion_new.py to get the final accuracy results along with the confidence intervals.
-> ### Generative Adversarial Network
+> ### GENERATIVE ADVERSARIAL NETWORK
 > 16. Go to src/TTS_GAN
 > 17. Copy the contents of src/TTS_GAN/unimib to src/unimib
 > 18. Run unimib_train_TTS_GAN.py to train the GAN model.
