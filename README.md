@@ -102,10 +102,13 @@ Please make sure to update tests as appropriate.
 <!-- CITATION -->
 ## Citation
 ```bibtex
-@article{YourName,
-  title={Your Title},
-  author={Your team},
-  year={Year}
+@inproceedings{de2024impact,
+  title={The Impact of Data Augmentation on Time Series Classification Models: An In-Depth Study with Biomedical Data},
+  author={De, Bikram and Sakevych, Mykhailo and Metsis, Vangelis},
+  booktitle={International Conference on Artificial Intelligence in Medicine},
+  pages={192--203},
+  year={2024},
+  organization={Springer}
 }
 ```
 
